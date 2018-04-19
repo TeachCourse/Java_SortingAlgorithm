@@ -1,4 +1,4 @@
-- 冒泡排序算法
+## 1、冒泡排序算法
 
 将一个数组的元素两两比较，将大的元素交换位置并逐渐“上浮”到右边
 
@@ -96,7 +96,7 @@
 ### [例子源码](src/cn/teachcourse/SortOfBubble.java)
 
 
-- 插入排序算法
+## 2、插入排序算法
 
 插入排序算法将数组分为：有序数组和无序数组，依次将无序数组的元素插入到有序数组中合适的位置，完成排序状态
 
@@ -253,7 +253,7 @@
 ### [例子源码](src/cn/teachcourse/SortOfInSertion.java)
 
 
-- 快速排序算法
+## 3、快速排序算法
 
 选中一个基准元素，用j表示从右边往左边移动的数组下标，用i表示从左边往右边移动的数组下标
 
@@ -428,7 +428,7 @@ public int getMiddle(int a[],int i,int j){
 ### [例子源码](src/cn/teachcourse/SortOfQuick.java)
 
 
-- 选择排序算法
+## 4、选择排序算法
 
 冒泡排序算法的特点是，依次比较相邻的两个元素对象，并将大的元素往右边移动
 
@@ -537,14 +537,13 @@ public static void main(String args[]){
     int a[]={3,2,5,8,9,1};
     
     for(int i=0;i<a.length-1;i++){
-        int temp;//临时变量
+        int temp=a[i];//临时变量
         int low=i;//记录数组最小元素的下标
         for(int j=i+1;j<a.length;j++){
             if(a[i]>a[j]){
                 low=j;
             }
         }
-        temp=a[i];
         a[i]=a[low];//将最小元素的值移动到i位置
         a[low]=temp;//将i位置的值移动到low位置
     }

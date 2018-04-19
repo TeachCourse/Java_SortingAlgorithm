@@ -18,24 +18,26 @@ public class SortOfSelector {
 		}
 
 	}
-    /**
-     * 常规的选择排序算法：查找最小元素的数组下标
-     * 1、其他元素与选择的元素比较，记录最小元素的数组下标，
-     * 2、并将最小元素作为新选择的元素
-     * @param num
-     */
+
+	/**
+	 * 常规的选择排序算法：查找最小元素的数组下标 1、其他元素与选择的元素比较，记录最小元素的数组下标， 2、并将最小元素作为新选择的元素
+	 * 
+	 * @param num
+	 */
 	public static void designAlgorithmA(int[] num) {
 		for (int i = 0; i < num.length - 1; i++) {
 			int temp = num[i];// 临时变量
 			int low = i;// 记录数组最小元素下标
 			for (int j = i + 1; j < num.length; j++) {
-				if (num[low] > num[j]) {
+				if (num[i] > num[j]) {
 					low = j;
 				}
 			}
 			// 将最小元素移动到左边i的位置
-			num[i] = num[low];
-			num[low] = temp;
+			if (i != low) {
+				num[i] = num[low];
+				num[low] = temp;
+			}
 		}
 	}
 
