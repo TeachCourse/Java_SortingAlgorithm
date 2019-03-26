@@ -555,3 +555,12 @@ public static void main(String args[]){
 ```
 
 ### [例子源码](src/cn/teachcourse/SortOfSelector.java)
+
+### 时间复杂度和空间复杂度
+
+|排序方法|平均时间复杂度|最优时间复杂度|最坏时间复杂度|空间复杂度|稳定性|
+|----|----|----|----|----|
+|冒泡排序|O(n^2)|O(n)|O(n^2)|O(1)|稳定|
+|快速排序|O(nLog2(n))|O(nLog2(n))|O(n^2)|O(nLog2(n))|不稳定|
+|插入排序|O(n^2)|O(n)|O(n^2)|O(1)|稳定|
+|选择排序|O(n^2)|O(n)|O(n^2)|O(1)|不稳定|
